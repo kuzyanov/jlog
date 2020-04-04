@@ -7,6 +7,12 @@ JSON log parser
 -V, --version    Prints version information
 ```
 
+# Binaries
+Binaries built for x86_x64 linux and windows - [release page](https://github.com/kuzyanov/jlog/releases).
+
+# Setup
+Add jlog executable to PATH variable.
+
 # Example usage:
 ```shell script
 cat json_logs.log | jlog > parsed_logs.log
@@ -27,7 +33,7 @@ Parses JSON object logs line by line, if line cannot be parsed it will be printe
 * Logger name with dots are truncated: com.example.Logger > c.e.Logger
 * Stack trace printed on new line
 
-# Example:
+# Output example:
 For command:
 ```shell script
 $ cat <<EOF | jlog
